@@ -5,6 +5,7 @@
 *.swp
 *.sql
 *.db
+*.sh
 .idea/
 github-public.rtf
 manage.py
