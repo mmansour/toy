@@ -1,8 +1,6 @@
 *.pyc
 *.pyo
-*.jpg
-*.png
-*.gif
+*.pid
 *.log
 *.swp
 *.sql
@@ -19,4 +17,3 @@ notes/
 .idea/
 log/
 migrations/
-site_media/images/

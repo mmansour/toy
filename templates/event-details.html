@@ -38,12 +38,7 @@
 {% endblock %}
 
 {% block main %}
-<table>
-<tr><th>Date</th><th>Event</th><th>Location</th><th>Time</th></tr>
-{% for e in events %}
-<tr><td>{{ e.event_date }}</td><td><a href="{% url toyota.views.event_details %}">{{ e.event }}</a></td><td>{{ e.location }}</td><td>{{ e.start_time }} - {{ e.end_time }}</td></tr>
-{% endfor %}
-</table>
+{{ home.event_details|safe }}
 {% endblock %}
 
 {% block main_bottom %}
