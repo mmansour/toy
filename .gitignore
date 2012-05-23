@@ -17,3 +17,4 @@ notes/
 .idea/
 log/
 migrations/
+static/media/
