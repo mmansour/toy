@@ -38,7 +38,8 @@ if (typeof tinyMCE != 'undefined') {
         accessibility_warnings : false,
         object_resizing: false,
         //cleanup: false, // SETTING THIS TO FALSE WILL BREAK EMBEDDING YOUTUBE VIDEOS
-        forced_root_block: "p",
+        forced_root_block:false,
+        force_p_newlines : false,
         remove_trailing_nbsp: true,
 
         // callbackss
@@ -52,7 +53,7 @@ if (typeof tinyMCE != 'undefined') {
         theme_advanced_buttons2: "",
         theme_advanced_buttons3: "",
         theme_advanced_path: false,
-        theme_advanced_blockformats: "p,h2,h3,h4,pre",
+        theme_advanced_blockformats: "p,h1,h2,h3,h4,h5,h6,pre",
         theme_advanced_styles: "[all] clearfix=clearfix;[p] small=small;[img] Image left-aligned=img_left;[img] Image left-aligned (nospace)=img_left_nospacetop;[img] Image right-aligned=img_right;[img] Image right-aligned (nospace)=img_right_nospacetop;[img] Image Block=img_block;[img] Image Block (nospace)=img_block_nospacetop;[div] column span-2=column span-2;[div] column span-4=column span-4;[div] column span-8=column span-8",
         theme_advanced_resizing : true,
         theme_advanced_resize_horizontal : false,
@@ -90,7 +91,7 @@ if (typeof tinyMCE != 'undefined') {
 		+ "-dt,"
 		+ "br,"
 		+ "img[class|src|alt=|width|height],"
-		+ "-h2,-h3,-h4,"
+		+ "-h1,-h2,-h3,-h4,-h5,-h6,"
 		+ "-pre,"
 		+ "-blockquote,"
 		+ "-cite,"
@@ -98,14 +99,15 @@ if (typeof tinyMCE != 'undefined') {
 		+ "-iframe,"
 		+ "-table[border=0|cellspacing|cellpadding|width|frame|rules|height|"
 		+ "align|summary|bgcolor|background|bordercolor],"
-		+ "-tr[rowspan|width|height|align|valign|bgcolor|"
+		+ "-tr[rowspan|width|height|align|valign|bgcolor|class|"
 		+ "background|bordercolor],"
 		+ "tbody,"
 		+ "thead,"
 		+ "tfoot,"
-		+ "#td[colspan|rowspan|width|height|align|valign|bgcolor|background|"
+		+ "#td[colspan|rowspan|width|height|align|valign|bgcolor|background|class|"
 		+ "bordercolor|scope],"
 		+ "#th[colspan|rowspan|width|height|align|valign|scope],"
+        + "-td[class],"
 		+ "-div,"
 		+ "",
         extended_valid_elements: "pre[style],"
@@ -126,10 +128,10 @@ if (typeof tinyMCE != 'undefined') {
         +"param[id|name|type|value|valuetype<DATA?OBJECT?REF],",
         valid_children : ""
         + "h1/h2/h3/h4/h5/h6/a[%itrans_na],"
-        + "table[thead|tbody|tfoot|tr|td],"
+        + "table[thead|tbody|tfoot|tr|td|class|width],"
         + "strong/b/p/div/em/i/td[%itrans|#text],"
 		//+ "body[%btrans|#text]"
-        + "",
+        + ""
 	});
 
 }

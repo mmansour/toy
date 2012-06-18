@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>Western Microsite</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="all" />
+	<script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ STATIC_URL }}js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ STATIC_URL }}js/functions.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="wrapper">
+	<!-- Container -->
+	<div id="container" class="shell">
+		<!-- Header -->
+		<div id="header">
+			<div class="text">
+                {% block header_top_left %}{% endblock %}
+				{% comment %}<h6>Northrop Grumman </h6>
+				<p>Employee Credit Union Services<br />PROVIDED BY:</p>{% endcomment %}
+			</div>
+			<h1 id="logo"><a href="https://www.western.org/index.aspx" target="_blank">Western Federal Credit Union</a></h1>
+			<a href="https://www.western.org/index.aspx" target="_blank" class="top-link" >Go to <span>western.org &raquo;</span></a>
+			<div class="cl">&nbsp;</div>
+		</div>
+		<!-- END Header -->
+
+		<!-- Content Area -->
+		<div class="content-area">
+			<h4>Check us out!</h4>
+			<div class="cl">&nbsp;</div>
+			<div class="img">
+				<img src="{{ STATIC_URL }}img/toyota.jpg" alt="Toyota" />
+				<span class="tl" >&nbsp;</span>
+				<span class="bl" >&nbsp;</span>
+			</div>
+			<div class="text-container">
+				<div class="text-left">
+                    {% block header_middle_left %}{% endblock %}
+					{% comment %}<div class="inner">
+						<h3>Special Offer</h3>
+						<p>If you’re shopping for a new car this year, make sure it comes fully loaded—including a Western  Auto Loan with a <strong>.25% discount!</strong></p>
+					</div>
+					<a href="#" class="button">Apply &raquo;</a>{% endcomment %}
+				</div>
+				<div class="text-right">
+                    {% block header_middle_right %}{% endblock %}
+					{% comment %}<div class="inner">
+						<h3>eChecking</h3>
+						<p>The perfect checking solution for Online Banking and ATM users!</p>
+						<ul>
+							<li>No Direct Deposit requirement</li>
+							<li>Earns monthly dividends</li>
+						</ul>
+					</div>
+					<a href="#" class="button">Learn More &raquo;</a>{% endcomment %}
+				</div>
+				<div class="cl">&nbsp;</div>
+				<div class="corners">
+					<span class="tl" >&nbsp;</span>
+					<span class="tr" >&nbsp;</span>
+					<span class="bl" >&nbsp;</span>
+					<span class="br" >&nbsp;</span>
+				</div>
+			</div>
+			<div class="cl">&nbsp;</div>
+		</div>
+		<!-- END Content Area -->
+
+		<div class="welcome">
+            {% block header_top_right %}{% endblock %}
+			{% comment %}<div class="left-text">
+				<h3>Welcome</h3>
+				<h4>Northrop Grumman<br />Employees</h4>
+			</div>
+			<div class="right-text">
+				<p><strong>Thank you for visiting.</strong> We’re proud to serve <strong>Northrop Grumman employees and their families,</strong> and we look forward to showing you just how great your financial experience can really be. From competitive rates to FREE Checking and much more, there’s no end to the value of Western membership.</p>
+			</div>{% endcomment %}
+			<div class="cl">&nbsp;</div>
+			<span class="corner" >&nbsp;</span>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<!-- Sidebar -->
+			<div class="sidebar left">
+
+				<!-- Box -->
+				<div class="box">
+					<div class="bottom">
+						<div class="corners">
+							<span class="tl" >&nbsp;</span>
+							<span class="tr" >&nbsp;</span>
+							<span class="bl" >&nbsp;</span>
+							<span class="br" >&nbsp;</span>
+						</div>
+                        {% block rate_image %}{% endblock %}
+{#						<h4>Rates <a href="#" class="img" ><img src="{{ STATIC_URL }}img/25off.png" alt="" /></a></h4>#}
+						<div class="inner">
+                            {% block body_left_col_top %}{% endblock %}
+							{% comment %}<p>As a <strong>Northrop Grumman employee</strong>, you automatically get .25% off our already low <a href="#">Auto Loan rates. Call</a> or visit your nearest <a href="#">Branch location</a> for more information.</p>
+							<a href="#" class="btn" ><span>Apply &raquo;</span></a>{% endcomment %}
+						</div>
+					</div>
+				</div>
+				<!-- END Box -->
+
+				<!-- Box -->
+				<div class="box">
+					<div class="bottom">
+						
+						<div class="corners">
+							<span class="tl" >&nbsp;</span>
+							<span class="tr" >&nbsp;</span>
+							<span class="bl" >&nbsp;</span>
+							<span class="br" >&nbsp;</span>
+						</div>
+                        {% block body_left_col_bottom %}{% endblock %}
+						{% comment %}<h4>Open an Account</h4>
+
+						<h3>Ready to get started?</h3>
+						<div class="inner">
+							<p>Fill out our <a href="#">online membership application</a> and enjoy the benefits of Western membership. Don’t forget, your family is eligible too.</p>
+							<a href="#" class="btn" ><span>Open an Account Today &raquo;</span></a>
+						</div>{% endcomment %}
+					</div>
+				</div>
+				<!-- END Box -->
+
+			</div>
+			<!-- END Sidebar -->
+
+			<!-- Content -->
+			<div id="content">
+
+				<!-- Box -->
+				<div class="box">
+					<div class="bottom">
+						<div class="corners">
+							<span class="tl" >&nbsp;</span>
+							<span class="tr" >&nbsp;</span>
+							<span class="bl" >&nbsp;</span>
+							<span class="br" >&nbsp;</span>
+						</div>
+                        {% block main_top %}{% endblock %}
+                        {% comment %}
+<h4>Western Loans. Apply Today!</h4>
+<div class="table-holder">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="title" width="270" >Auto Loans</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+<tr class="color" >
+<td class="title" width="270" >Mortgage Loans</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+<tr>
+<td class="title" width="270" >Visa Credit Cards</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+<tr class="color" >
+<td class="title" width="270" >All Other Loans</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+</table>
+</div>
+                        {% endcomment %}
+					</div>
+				</div>
+				<!-- END Box -->
+
+				<!-- Box -->
+				<div class="box">
+					<div class="bottom">
+						<div class="corners">
+							<span class="tl" >&nbsp;</span>
+							<span class="tr" >&nbsp;</span>
+							<span class="bl" >&nbsp;</span>
+							<span class="br" >&nbsp;</span>
+						</div>
+                        {% block main_bottom %}{% endblock %}
+						{% comment %}<h4>Get Connected to Western</h4>
+						<div class="inner">
+							<p>Western offers a range of events and programs to meet the needs of <strong>Northrop Grumman employees</strong>. We offer <a href="#">Loan Sessions, Benefits Fairs, Lunch and Learns</a> and other opportunities to assist you. Check out our calendar. <strong>We’d love to see you soon!</strong></p>
+						</div>{% endcomment %}
+							
+						<div class="events">
+							<h3>Calendar of Events &amp; Programs</h3>
+							<a href="#" class="more" >See more &raquo;</a>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th width="34">Date</th>
+									<th width="140">Event</th>
+									<th width="76">Location</th>
+									<th class="noborder">Time</th>
+								</tr>
+                                {% block main %}{% endblock %}
+								{% comment %}<tr class="color" >
+									<td>
+										<p class="month" >DEC</p>
+										<p class="day" >20</p>
+									</td>
+									<td class="title" ><a href="#"><strong>Loan Session</strong></a></td>
+									<td>Ontario, CA</td>
+									<td>10 am - 1 pm</td>
+								</tr>
+								<tr>
+									<td>
+										<p class="month" >JAN</p>
+										<p class="day" >02</p>
+									</td>
+									<td class="title" ><a href="#"><strong>Lunch &amp; Learn</strong></a></td>
+									<td>Ontario, CA</td>
+									<td>10 am - 1 pm</td>
+								</tr>{% endcomment %}
+							</table>
+						</div>
+
+						<div class="inner">
+                            {% block event_details %}{% endblock %}
+							{% comment %}<h3>Let us Know</h3>
+							<p>Questions, comments or to schedule an event, email Alex Wouters at <a href="#">alex.wouters@western.org</a>. For your protection, please do not email account or personal information.</p>
+						{% endcomment %}</div>
+					</div>
+				</div>
+				<!-- END Box -->
+
+			</div>
+			<!-- END Content -->
+
+			<!-- Sidebar -->
+			<div class="sidebar right">
+
+				<!-- Box -->
+				<div class="box">
+					<div class="bottom">
+						<div class="corners">
+							<span class="tl" >&nbsp;</span>
+							<span class="tr" >&nbsp;</span>
+							<span class="bl" >&nbsp;</span>
+							<span class="br" >&nbsp;</span>
+						</div>
+                        {% block body_right_col %}{% endblock %}
+{% comment %}<h4>Resources Just For You</h4>
+<div class="inner">
+<p>We’ve partnered with <strong>Northrop Grumman</strong> to bring Western to you. Visit our <a href="#">Branch Locator</a> to find an on-site Branch or ATM that’s nearby. </p>
+<a href="#" class="btn" ><span>Find a Branch &raquo;</span></a>
+
+<div class="articles">
+<h5>Educational Information and Articles</h5>
+<p>We’ll keep you “in the know” with articles from our <a href="#">Financial Library</a>.</p>
+<ul>
+<li><a href="#">How a Pre-Approval Letter Can Help You</a></li>
+<li><a href="#">The Benefits of a Share Certificate</a></li>
+<li><a href="#">Shape up Your Credit Score</a></li>
+<li><a href="#">Plan Your Way to a Secure Retirement</a></li>
+<li><a href="#">The Importance of Life Insurance</a></li>
+</ul>
+</div>
+</div>{% endcomment %}
+					</div>
+				</div>
+				<!-- END Box -->
+			</div>
+			<!-- END Sidebar -->
+			<div class="cl">&nbsp;</div>
+
+			<!-- Social -->
+			<div class="socials">
+				<ul>
+					<li><a href="https://www.facebook.com/WesternFederalCreditUnion" target="_blank"><img src="{{ STATIC_URL }}img/social-1.png" alt="" /></a></li>
+					<li><a href="http://www.western.org/whatsnew.xml" target="_blank"><img src="{{ STATIC_URL }}img/social-2.png" alt="" /></a></li>
+				</ul>
+			</div>
+			<!-- END Socials -->
+		</div>
+		<!-- END Main -->
+
+		<!-- Footer -->
+		<div id="footer">
+			<p class="copy" >Copyright &copy; 2012 Western Federal Credit Union</p>
+			<ul>
+				<li><img src="{{ STATIC_URL }}img/banner-1.jpg" alt="" /></li>
+				<li><img src="{{ STATIC_URL }}img/banner-2.jpg" alt="" /></li>
+			</ul>
+			<div class="corners">
+				<span class="bl" >&nbsp;</span>
+				<span class="br" >&nbsp;</span>
+			</div>
+		</div>
+		<!-- END Footer -->
+	</div>
+	<!-- END Container -->
+</div>
+</body>
+</html>

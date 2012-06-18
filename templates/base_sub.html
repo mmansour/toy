@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>Western Microsite</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="all" />
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="wrapper">
+	<!-- Container -->
+	<div id="container" class="shell">
+		<!-- Header -->
+		<div id="header">
+			<div class="text">
+                {% block header_top_left %}{% endblock %}
+				{% comment %}<h6><a href="/">Northrop Grumman</a></h6>
+				<p>Employee Credit Union Services<br />PROVIDED BY:</p>{% endcomment %}
+			</div>
+			<h1 id="logo"><a href="http://western.org/" target="_blank">Western Federal Credit Union</a></h1>
+			<a href="http://western.org/" target="_blank" class="top-link" > Go to <span>western.org &raquo;</span></a>
+			<div class="cl">&nbsp;</div>
+		</div>
+		<!-- END Header -->
+
+		<div class="welcome">
+            {% block header_top_right %}{% endblock %}
+			{% comment %}<div class="left-text">
+				<h3>Welcome</h3>
+				<h4><a href="/">Northrop Grumman Employees</a></h4>
+			</div>
+			<div class="right-text">
+				<p><strong>Thank you for visiting.</strong> We’re proud to serve <strong>Northrop Grumman employees and their families,</strong> and we look forward to showing you just how great your financial experience can really be. From competitive rates to FREE Checking and much more, there’s no end to the value of Western membership.</p>
+			</div>{% endcomment %}
+			<div class="cl">&nbsp;</div>
+			<span class="corner" >&nbsp;</span>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<!-- Contnet-Left -->
+			<div class="content-left">
+
+				<!-- Box -->
+				<div class="box">
+					<div class="corners">
+						<span class="tl" >&nbsp;</span>
+						<span class="tr" >&nbsp;</span>
+						<span class="bl" >&nbsp;</span>
+						<span class="br" >&nbsp;</span>
+					</div>
+                    {% block main_top %}{% endblock %}
+					{% comment %}<h4>Western Loans. Apply Today!</h4>
+
+					<div class="table-holder">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="title" width="270" >Auto Loans</td>
+								<td><a href="#" class="apply" >Apply</a></td>
+								<td><a href="#"><strong>Rates</strong></a></td>
+							</tr>
+							<tr class="color" >
+								<td class="title" width="270" >Mortgage Loans</td>
+								<td><a href="#" class="apply" >Apply</a></td>
+								<td><a href="#"><strong>Rates</strong></a></td>
+							</tr>
+							<tr>
+								<td class="title" width="270" >Visa Credit Cards</td>
+								<td><a href="#" class="apply" >Apply</a></td>
+								<td><a href="#"><strong>Rates</strong></a></td>
+							</tr>
+							<tr class="color" >
+								<td class="title" width="270" >All Other Loans</td>
+								<td><a href="#" class="apply" >Apply</a></td>
+								<td><a href="#"><strong>Rates</strong></a></td>
+							</tr>
+						</table>
+					</div>{% endcomment %}
+				</div>
+				<!-- END Box -->
+
+				<!-- Box -->
+				<div class="box">
+					<div class="bottom">
+						<div class="corners">
+							<span class="tl">&nbsp;</span>
+							<span class="tr">&nbsp;</span>
+							<span class="bl">&nbsp;</span>
+							<span class="br">&nbsp;</span>
+						</div>
+                        {% block rate_image %}{% endblock %}
+{#						<h4>Rates <a href="#" class="img"><img src="{{ STATIC_URL }}img/25off.png" alt="" /></a></h4>#}
+						<div class="inner">
+                            {% block body_left_col_top %}{% endblock %}
+							{% comment %}<p>As a <strong>Northrop Grumman employee</strong>, you automatically get .25% off our already low <a href="#">Auto Loan rates. Call</a> or visit your nearest <a href="#">Branch location</a> for more information.</p>
+							<a href="#" class="btn" ><span>Apply &raquo;</span></a>{% endcomment %}
+						</div>
+					</div>
+				</div>
+				<!-- END Box -->
+
+				<!-- Box -->
+				<div class="box">
+					<div class="bottom">
+						<div class="corners">
+							<span class="tl">&nbsp;</span>
+							<span class="tr">&nbsp;</span>
+							<span class="bl">&nbsp;</span>
+							<span class="br">&nbsp;</span>
+						</div>
+                        {% block body_left_col_bottom %}{% endblock %}
+						{% comment %}<h4>Open an Account</h4>
+
+						<h3>Ready to get started?</h3>
+						<div class="inner">
+							<p>Fill out our <a href="#">online membership application</a> and enjoy the benefits of Western membership. Don’t forget, your family is eligible too.</p>
+							<a href="#" class="btn" ><span>Open an Account Today &raquo;</span></a>
+						</div>{% endcomment %}
+					</div>
+				</div>
+				<!-- END Box -->
+
+			</div>
+			<!-- END Contnet-Left -->
+
+			<!-- Content-Right -->
+			<div class="content-right">
+				
+				<!-- Box -->
+				<div class="box article">
+					<div class="bottom">
+						<div class="corners">
+							<span class="tl" >&nbsp;</span>
+							<span class="tr" >&nbsp;</span>
+							<span class="bl" >&nbsp;</span>
+							<span class="br" >&nbsp;</span>
+						</div>
+                        {% block event_details_right %}{% endblock %}
+{% comment %}<h4>Get Connected to Western</h4>
+<div class="inner">
+<p>In addition to an unsurpassed financial experience, we offer unique opportunities to meet with you in person. Simply put, we bring Western to you. Here’s a quick look at what we have in place to help you manage your finances.</p>
+
+<h3>Loan Sessions</h3>
+<p>During our Loan Sessions, we’ll be on hand to help you with any loan questions you may have. We’ll even provide personal assistance while you’re submitting your loan application—right then and there if you wish. If you’re interesting in financing a purchase with Western this year, please keep an eye on our calendar for upcoming Loan Sessions.</p>
+
+<h3>Benefits Fairs</h3>
+<p>We can also be there to answer your financial questions during Benefits Fairs. If you want to know more about Western membership or are curious about a specific product or service, we’re here to help. Plus, you can count on us coming loaded with great giveaway items, too! Check our calendar to see when Western will be visiting next. </p>
+
+<h3>Lunch and Learns</h3>
+<p>Western believes that having a good financial education leads to good financial decision making. That’s why we offer FREE Financial Workshops. Some popular topics include:</p>
+
+<ul>
+<li>Identity Theft: Who’s in your Wallet?</li>
+<li>Unlocking the Path to Buying a Home</li>
+<li>Solving the Mystery of Credit Reporting</li>
+<li>Financial Peace of Mind: How to Build a Basic Budget</li>
+<li>The Benefits of Western Federal Credit Union</li>
+</ul>
+
+<p>Keep an eye out for a Lunch and Learn that interests you. </p>
+
+<h3>Let us Know</h3>
+<p>Questions, comments or to schedule an event, email Alex Wouters at <a href="#">alex.wouters@western.org</a>. For your protection, please do not email account or personal information.</p>
+</div>{% endcomment %}
+					</div>
+				</div>
+				<!-- END Box -->
+
+			</div>
+			<!-- END Content-Right -->
+			<div class="cl">&nbsp;</div>
+
+			<!-- Social -->
+			<div class="socials">
+				<ul>
+					<li><a href="https://www.facebook.com/WesternFederalCreditUnion" target="_blank"><img src="{{ STATIC_URL }}img/social-1.png" alt="" /></a></li>
+					<li><a href="http://www.western.org/whatsnew.xml" target="_blank"><img src="{{ STATIC_URL }}img/social-2.png" alt="" /></a></li>
+				</ul>
+			</div>
+			<!-- END Socials -->
+		</div>
+		<!-- END Main -->
+
+		<!-- Footer -->
+		<div id="footer">
+			<p class="copy" >Copyright &copy; 2012 Western Federal Credit Union</p>
+			<ul>
+				<li><img src="{{ STATIC_URL }}img/banner-1.jpg" alt="" /></li>
+				<li><img src="{{ STATIC_URL }}img/banner-2.jpg" alt="" /></li>
+			</ul>
+			<div class="corners">
+				<span class="bl" >&nbsp;</span>
+				<span class="br" >&nbsp;</span>
+			</div>
+		</div>
+		<!-- END Footer -->
+	</div>
+	<!-- END Container -->
+</div>
+</body>
+</html>
