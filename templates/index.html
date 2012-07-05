@@ -50,7 +50,7 @@
     </td>
     <td class="title"><a href="{% url toyota.views.event_details %}"><strong>{{ e.event }}</strong></a></td>
     <td>{{ e.location }}</td>
-    <td class="noborder">{{ e.start_time|time:"gA" }} - {{ e.end_time|time:"gA" }}</td>
+    <td class="noborder">{{ e.start_time|time:"P" }} - {{ e.end_time|time:"P" }}</td>
 </tr>
 {% endfor %}
 {% comment %}
