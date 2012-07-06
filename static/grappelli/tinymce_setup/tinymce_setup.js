@@ -45,6 +45,7 @@ tinyMCE.init({
     //forced_root_block: "p",
     forced_root_block:false,
     force_p_newlines : false,
+    convert_fonts_to_spans : false,
     remove_trailing_nbsp: true,
     
     // callbackss
