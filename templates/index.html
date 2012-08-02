@@ -38,7 +38,11 @@
 
 {% block rate_image %}
 {#    <img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="" />#}
-    <h4>Rates <a href="http://www.western.org/about/rates_loan.aspx" target="_blank" class="img" ><img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="Current Rates" /></a></h4>
+<h4>{{ home.body_left_column_rate_text }}
+{% if home.body_left_column_show_rate_image %}
+<a href="http://www.western.org/about/rates_loan.aspx" target="_blank" class="img" ><img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="Current Rates" /></a>
+{% endif %}
+</h4>
 {% endblock %}
 
 {% block main %}

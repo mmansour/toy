@@ -9,7 +9,7 @@ class MicropageAdmin(DisplayableAdmin):
         ("Published Date",               {'fields': ['publish_date']}),
         ("Published Status",               {'fields': ['status', 'page_type']}),
         ("Header",               {'fields': ['header_top_left', 'header_top_right','header_middle_left', 'header_middle_right']}),
-        ("Body",               {'fields': ['body_left_column_rate_image', 'body_left_column_top', 'body_left_column_bottom','body_middle_column_top', 'body_middle_column_bottom','body_right_column']}),
+        ("Body",               {'fields': ['body_left_column_rate_text','body_left_column_show_rate_image', 'body_left_column_rate_image', 'body_left_column_top', 'body_left_column_bottom','body_middle_column_top', 'body_middle_column_bottom','body_right_column']}),
         ("Event Details",               {'fields': ['event_details','event_details_left','event_details_right']}),
         ("Footer",               {'fields': ['footer']}),
 

@@ -12,6 +12,8 @@ class Micropage(Displayable):
     header_middle_left = RichTextField(blank=True, verbose_name="Header Bottom Left")
     header_middle_right = RichTextField(blank=True, verbose_name="Header Bottom Right")
     body_left_column_rate_image = models.ImageField(upload_to="uploads", blank=True, default='uploads/25off.png')
+    body_left_column_rate_text = models.CharField(max_length=400, verbose_name="Rates - Header Text", blank=True, null=True)
+    body_left_column_show_rate_image = models.BooleanField(default=True, verbose_name="Show Rate Image")
     body_left_column_top = RichTextField(blank=True, verbose_name="Body Column Left Top")
     body_left_column_bottom = RichTextField(blank=True, verbose_name="Body Column Left Bottom")
     body_middle_column_top = RichTextField(blank=True, verbose_name="Body Column Middle Top")
