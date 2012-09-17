@@ -74,7 +74,7 @@ h1#logo a { display: block; width: 340px; height: 55px;  background: url(/static
 .text-container p { font-size: 14px; line-height: 18px; }
 .text-container .button { display: block; width: 133px; height: 31px; background: url(/static/img/button.png) no-repeat 0 0;  line-height: 30px; text-align: center; font-size: 14px; font-weight: bold; color: #4e89be; position: absolute; right: 15px; bottom: 10px; }
 .text-container .button:hover { text-decoration: none;  }
-
+/* Add 100px to text-left and subract 100px to text-right for latest request */
 .text-container .text-left { float: left; display: inline; width: 370px; height: 236px; background: #fdfcf5; position: relative; }
 .text-container .text-left .inner { width: 214px; padding: 60px 0 0 68px;  }
 .text-container .text-right { float: right; display: inline; width: 330px; height: 236px; background: #f8fdff url(/static/img/shadow.png) no-repeat left bottom; position: relative; }
