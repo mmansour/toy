@@ -72,14 +72,14 @@ h1#logo a { display: block; width: 340px; height: 55px;  background: url(/static
 .text-container { float: left; display: inline; border: 1px solid #ccd5e4; width: 700px; height: 236px; position: relative; margin-left: -2px; background: #fff; }
 .text-container h3 { font-size: 28px; font-weight: bold; padding: 0 0 6px; }
 .text-container p { font-size: 14px; line-height: 18px; }
-.text-container .button { display: block; width: 133px; height: 31px; background: url(/static/img/button.png) no-repeat 0 0;  line-height: 30px; text-align: center; font-size: 14px;
+.text-container .button { display: block; width: 133px; height: 31px; background: url(/static/img/button.png) no-repeat 0 0;  line-height: 30px; text-align: center; font-size: 13px;
     font-weight: bold; color: #4e89be; position: absolute; right: 41px; bottom: 10px; padding: 0;}
 .text-container .button:hover { text-decoration: none;  }
 /* Add 100px to text-left and subract 100px to text-right for latest request */
 .text-container .text-left { float: left; display: inline; width: 470px; height: 236px; background: #fdfcf5; position: relative; }
 .text-container .text-left .inner { width: 90%; padding: 60px 0 0 23px;  }
 .text-container .text-right { float: right; display: inline; width: 230px; height: 236px; background: #f8fdff url(/static/img/shadow.png) no-repeat left bottom; position: relative; }
-.text-container .text-right .inner {  padding: 60px 0 0 34px; }
+.text-container .text-right .inner {  padding: 60px 5px 0 34px; }
 .text-container ul { list-style: none outside none; margin: 0; padding: 1px 0 0;  }
 .text-container ul li { background: url(/static/img/arrow.png) no-repeat top left; font-size: 14px; line-height: 11px; padding: 0 0 7px 20px;  }
 
